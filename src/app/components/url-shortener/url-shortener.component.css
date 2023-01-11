@@ -1,0 +1,10 @@
+.grid {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  justify-content: center;
+  gap: 32px 16px;
+}
+
+.alert {
+  width: fit-content;
+}

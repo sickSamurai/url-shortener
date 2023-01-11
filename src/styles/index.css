@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'bootstrap.min.css';
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
