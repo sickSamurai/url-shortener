@@ -1,0 +1,26 @@
+<h2 class="title">Ingresa una URL</h2>
+<div class="grid p-5">
+  <form (submit)="processURL()" class="grid form-group" style="grid-column: 1 / span 3">
+    <input
+      [(ngModel)]="url"
+      name="url"
+      type="text"
+      class="form-control"
+      placeholder="URL"
+      style="grid-column: 1 / span 2"
+    />
+    <button type="submit" class="btn btn-primary" style="grid-column: 3">RECORTAR</button>
+  </form>
+  <input
+    *ngIf="wasURLShorted"
+    [ngModel]="shortURL"
+    type="text"
+    class="form-control"
+    placeholder="URL Acortada"
+    readonly
+    style="grid-column: 1 / span 2"
+  />
+  <div *ngIf="isLoading" class="d-flex justify-content-center" style="grid-column: 1 / span 3">
+    <spinner></spinner>
+  </div>
+</div>
